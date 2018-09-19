@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hadoop" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dfs" target="1.5" />
+      <module name="dfs_sort" target="1.5" />
+      <module name="hadoop" target="1.5" />
+      <module name="hdfs" target="1.5" />
+      <module name="hive" target="1.5" />
+      <module name="hivejdbc" target="1.5" />
+      <module name="mapreduce" target="1.5" />
+      <module name="mr" target="1.5" />
+      <module name="myhive" target="1.5" />
+      <module name="myhive2" target="1.5" />
+      <module name="myzk" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

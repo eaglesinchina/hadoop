@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 定义名字空间 -->
+<mapper namespace="orders">
+
+
+    <select id="selectById" resultMap="map1" >
+<!--id | price | user_id | product -->
+
+        <!--id | name    | sex-->
+        select orders.id  orderId,
+        orders.price  price,
+        orders.user_id  user_id,
+        orders.product  product,
+
+        users2.id  userId,
+        users2.name  userName,
+        users2.sex  userSex
+
+        from  orders
+        left join users2
+        on users2.id=orders.user_id
+
+       where orders.id=#{id}
+
+
+    </select>
+    <resultMap id="map1" type="_orders">
+        <id column="orderId" property="id" ></id>
+        <result column="price" property="price" ></result>
+        <result column="product" property="product" ></result>
+
+        <association property="user" javaType="_user">
+            <id column="userId" property="id" ></id>
+            <result column="userName" property="name" ></result>
+            <result column="userSex" property="sex" ></result>
+        </association>
+    </resultMap>
+
+
+</mapper>

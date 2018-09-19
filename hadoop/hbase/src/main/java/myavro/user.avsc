@@ -1,0 +1,9 @@
+{"namespace": "a.b",
+ "type": "record",
+ "name": "User",
+ "fields": [
+     {"name": "name", "type": "string"},
+     {"name": "id",  "type":  "int"},
+     {"name": "addr", "type": "string"}
+ ]
+}

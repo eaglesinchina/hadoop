@@ -1,0 +1,43 @@
+<?xml version = "1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+
+    <properties>
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/t?allowMultiQueries=true"/>
+        <property name="username" value="root"/>
+        <property name="password" value="daitoue"/>
+    </properties>
+
+    <!--别名-->
+    <typeAliases>
+        <typeAlias type="c.Area" alias="_area" />
+        <typeAlias type="d.Husband" alias="_husband" />
+        <typeAlias type="d.Wife" alias="_wife" />
+        <typeAlias type="d.Husband" alias="_student" />
+        <typeAlias type="d.Wife" alias="_teacher" />
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+
+    <mappers>
+        <mapper resource="HusbandMapper.xml"/>
+        <mapper resource="WifeMapper.xml"/>
+        <mapper resource="StudentMapper.xml"/>
+        <mapper resource="TeacherMapper.xml"/>
+    </mappers>
+</configuration>

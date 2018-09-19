@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <!--自动扫描-->
+    <context:component-scan base-package="a"></context:component-scan>
+
+   <!-- <bean id="helloImpl" class="a.HelloImpl">
+        <property name="name" value="tom"/>
+    </bean>-->
+
+    <bean id="helloImpl2" class="a.HelloImpl" scope="prototype">
+        <constructor-arg type="int" value="1" ></constructor-arg>
+        <constructor-arg type="java.lang.String" value="aa" ></constructor-arg>
+        <property name="name" value="tom"/>
+    </bean>
+    <bean id="helloImpl3" class="a.HelloImpl" scope="prototype">
+        <constructor-arg type="java.lang.String" value="aa" index="0"></constructor-arg>
+        <constructor-arg type="int" value="1" index="1" ></constructor-arg>
+        <property name="name" value="tom"/>
+    </bean>
+</beans>
