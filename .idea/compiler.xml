@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="flume" />
+        <module name="hbase" />
+        <module name="hdfs" />
+        <module name="hive" />
+        <module name="hive (1)" />
+        <module name="java" />
+        <module name="kafka" />
+        <module name="ssm" />
+        <module name="ssm_mybatis" />
+        <module name="ssm_sm" />
+        <module name="ssm_spring" />
+        <module name="zk" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="flume" target="1.5" />
+      <module name="hbase" target="6" />
+      <module name="hdfs" target="1.5" />
+      <module name="hive" target="7" />
+      <module name="hive (1)" target="7" />
+      <module name="java" target="1.5" />
+      <module name="java-primary" target="7" />
+      <module name="kafka" target="8" />
+      <module name="ssm" target="1.5" />
+      <module name="ssm_mybatis" target="1.5" />
+      <module name="ssm_sm" target="1.5" />
+      <module name="ssm_spring" target="1.5" />
+      <module name="zk" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

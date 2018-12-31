@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/flume/flume.iml" filepath="$PROJECT_DIR$/flume/flume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hadoop.iml" filepath="$PROJECT_DIR$/.idea/hadoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hbase/hbase.iml" filepath="$PROJECT_DIR$/hbase/hbase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hdfs/hdfs.iml" filepath="$PROJECT_DIR$/hdfs/hdfs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hive/hive.iml" filepath="$PROJECT_DIR$/hive/hive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-primary/hive (1).iml" filepath="$PROJECT_DIR$/java-primary/hive (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/java.iml" filepath="$PROJECT_DIR$/java/java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka/kafka.iml" filepath="$PROJECT_DIR$/kafka/kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm/ssm.iml" filepath="$PROJECT_DIR$/ssm/ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm_mybatis/ssm_mybatis.iml" filepath="$PROJECT_DIR$/ssm_mybatis/ssm_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm_sm/ssm_sm.iml" filepath="$PROJECT_DIR$/ssm_sm/ssm_sm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm_spring/ssm_spring.iml" filepath="$PROJECT_DIR$/ssm_spring/ssm_spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zk/zk.iml" filepath="$PROJECT_DIR$/zk/zk.iml" />
+    </modules>
+  </component>
+</project>
